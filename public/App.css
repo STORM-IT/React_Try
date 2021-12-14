@@ -1,0 +1,66 @@
+.box_obj{
+    background-color: rgb(168, 210, 230);
+    text-align: center;
+
+    
+    
+    
+ 
+    
+}
+input[type=text]{
+    background-color: rgb(217, 255, 220);
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    padding: 5px 10px;
+}
+.box_person{
+    width: 40vw;
+    background-color: rgba(199, 228, 37, 0.726);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+   
+    text-align: center;
+}
+#container_person{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+    
+    transition:height 3s ease-in;
+}
+.Height100{
+    height: max-content;
+}
+/* .box_obj{
+    background-color: rgb(89, 211, 219);
+    padding: 20px;
+    
+    margin: 20px 10px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+.box_obj div{
+    width: 30%;
+    height: 50px;
+    padding-top: 25px;
+    background-color: rgba(44, 115, 207, 0.712);
+    
+} */
+/* button{
+    padding: 6px;
+    background-color: rgba(60, 236, 54, 0.767);
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 15px;
+} */
+
