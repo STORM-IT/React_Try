@@ -1,7 +1,10 @@
 import { createContext } from "react";
 
 export default createContext({
-    state:{},
+    ListPersons:[],
+    name:"",
+    age:"",
+    showList:true,
     add_persons:()=>{},
     delete_person:()=>{},
     edite_person:()=>{},

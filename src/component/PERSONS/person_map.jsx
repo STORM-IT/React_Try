@@ -10,7 +10,7 @@ const persons = () => {
         <SimpleContext.Consumer>
             {context => (
                 <div id="container_person" className=''>
-                    {context.state.list_person.map((item) => {
+                    {context.ListPersons.map((item) => {
                         return (
                             <div className='box_person'>
                                 <p>your name is = {item.name}</p>
@@ -29,7 +29,7 @@ const persons = () => {
                                 
                                 <br />
                                 <div className='d-grid gap-1'>
-                                    <Button variant="danger btn-sm mt-3 w-100" onClick={() => context.delete_person(item.name)} size='sm'>X</Button>
+                                    <Button variant="danger btn-sm mt-3 w-100" onClick={() => context.delete_person(item.id)} size='sm'>X</Button>
                                 </div>
 
 
