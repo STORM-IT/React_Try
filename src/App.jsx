@@ -5,11 +5,12 @@ import Persons from './component/PERSONS/person_map'
 
 import { ToastContainer, toast } from 'react-toastify'
 import SimpleContext from './component/Context/SimpleContext'
+import Radium from "radium";
 import 'react-toastify/dist/ReactToastify.css';
 import Header from './component/Header/Header'
 
 
-export default function App() {
+export default Radium(function App() {
   // state = {
   //   list_person: [{ name: "ahmad", age: 20, id: 1 }, { name: "reza", age: 20, id: 2 }],
   //   name: '',
@@ -86,11 +87,11 @@ export default function App() {
   }
   const show_or_hiden = () => {
     // this.setState(setShowList = !getShowList)
-    setShowList (!getShowList); 
+    setShowList(!getShowList);
     // console.log(this.state.show);
   }
 
-  const  show  = getShowList;
+  const show = getShowList;
   var Check_show_person = null;
   // // var container_person=document.getElementById("container_person");
   if (show) {
@@ -103,14 +104,18 @@ export default function App() {
   // //   container_person.classList.remove("Height100");
   // // }
   //console.log(Check_show_person);
+  // const style_hover = {
+  //   ':hover': { backgroundColor: "red" }
+  // }
+  // style_hover[':hover'] = { backgroundColor: "black", color: 'White' }
   return (
 
     <SimpleContext.Provider
       value={{
-        ListPersons:getListPersons ,
-        name:getName ,
+        ListPersons: getListPersons,
+        name: getName,
         age: getAge,
-        showList:getShowList ,
+        showList: getShowList,
         add_persons: add_persons,
         delete_person: delete_person,
         edite_person: edite_person,
@@ -121,8 +126,10 @@ export default function App() {
       }} >
       <Header />
       {Check_show_person}
+
       <ToastContainer />
     </SimpleContext.Provider>
 
   )
 }
+)
